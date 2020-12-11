@@ -1,0 +1,29 @@
+﻿#``1  Print the number of integers in an array that are above the given input and the number that are below, e.g. for the array [1, 5, 2, 1, 10] with input 6, print “above: 1, below: 4”.
+
+
+public void AboveBelow(int[] arr, int input) {
+  int above = 0, below = 0;
+  for (int i = 0; i < arr.Length; i++) {
+    if (arr[i] < input) below++;
+    else if (arr[i] > input) above++;
+  }
+  print (“above: “ + above.ToString() + “, below: “ + below.ToString());
+}
+
+
+#2  Rotate the characters in a string by a given input and have the overflow appear at the beginning, e.g. “MyString” rotated by 2 is “ngMyStri”.
+
+
+public string Rotate(str input, int rotAmt) {
+  str newInput = input.Substring(input.Length - rotAmt) + input.Substring(0, input.Length - rotAmt);
+  return newInput;
+}
+(Could also edit string directly with pointers, &input and *input)
+
+
+#3  If you could change 1 thing about your favorite framework/language/platform (pick one), what would it be?
+C# is my main language, but Python was my first, and is a language I consider to be simple and great to start out with. Using pip install to integrate libraries into a Python project is something I wish could be done with C#. With C# I have to download the entire library myself, put it in the same folder, and load it into my project just to be able to use it. Visual Studio has at least made it easier to install libraries by just creating a reference to the .dll.
+
+
+Let us know if you have any questions! If you're good to go, please send us back your exercise at your convenience (please upload your response to a public git repository, such as Github).
+https://github.com/turbotortoise
